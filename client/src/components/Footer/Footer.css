@@ -1,0 +1,282 @@
+.footer {
+    margin-top: 200px;
+    font-size: 18px;
+    background-color: #192a56;
+    color: white;
+    padding: 50px 0px 15px 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.contact-us {
+    max-width: 1500px;
+    color: #172554;
+    border: none;
+    border-radius: 15px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-top: -130px;
+    margin-bottom: 200px;
+    text-align: left;
+    background-color: #fff;
+    padding: 40px 150px 50px 60px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+.send-message {
+    width: 60%;
+    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    margin: 40px -50px 0px 120px;
+    text-align: left;
+    border: #fff solid;
+    border-bottom: transparent;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+
+.send-message p {
+    margin-bottom: 10px;
+}
+
+.send-message input::placeholder,
+.send-message textarea::placeholder {
+    color: #fff;
+    opacity: 0.3;
+    font-size: 15px;
+    font-style: normal;
+    line-height: normal;
+
+}
+
+.contact-content {
+    margin-bottom: 40px;
+}
+
+.contact-content-address {
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.contact-content-link {
+    font-weight: 600;
+}
+
+.contact-us address {
+    font-style: normal;
+}
+
+.contact-us a {
+    color: #172554;
+    text-decoration: none;
+}
+
+.contact-us a:hover {
+    text-decoration: underline;
+}
+
+.send-message form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.contact-us h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.send-message h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.send-message input,
+.send-message textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    border-bottom: 1px solid #ffffff;
+    outline: none;
+    font-size: 15px;
+    font-style: normal;
+    line-height: 25px;
+    padding: 12px 0;
+
+}
+
+.send-message textarea {
+    line-height: 50px;
+}
+
+
+.send-message button {
+    width: 150px;
+    height: 53px;
+    border-radius: 15px;
+    background: #ffffff;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: #172554;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 30px;
+
+
+}
+
+.send-message button:hover {
+    color: #ffffff;
+    background-color: #172554;
+    border: 1px solid #fff;
+}
+
+
+.footer-bottom {
+    margin: 80px 0px 0px 350px;
+
+}
+
+@media (max-width: 450px) {
+    .footer {
+        display: flex;
+        /* Stack elements vertically */
+        justify-content: center;
+        width: 100%;
+        height: 380px;
+        /* Let the height be dynamic */
+        margin-top: 230px;
+        /* Less margin on top for tight spaces */
+        padding-top: 40px;
+
+    }
+
+    .contact-us h2 {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .send-message h2 {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .footer-right {
+        align-items: center;
+        /* Center-align the items */
+        font-size: 10px;
+    }
+
+
+    .contact-us {
+        margin-top: -350px;
+        /* Less margin on top */
+        margin-left: -100px;
+        /* Less margin on bottom */
+        padding: 20px;
+        /* Less padding to fit small screens */
+        width: 260;
+        /* Full width */
+        height: 196;
+
+    }
+
+    .send-message {
+        margin-left: -40px;
+        /* Adjust margin */
+        margin-top: -10px;
+        padding: 30px;
+        /* Adjust padding */
+        height: 350px;
+        width: 1003px;
+        /* Full width */
+        font-size: 10px;
+
+    }
+
+    .send-message input,
+    .send-message textarea {
+        padding: 10px;
+        margin-bottom: 5px;
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        border-bottom: 1px solid #ffffff;
+        outline: none;
+        font-style: normal;
+        list-style: normal;
+        padding: 5px 0;
+
+    }
+
+    .send-message ::placeholder {
+        font-size: 10px;
+    }
+
+    .contact-content {
+        margin-bottom: 30px;
+    }
+
+    .send-message input,
+    .send-message textarea {
+        width: 100%;
+        /* Full width for form elements */
+    }
+
+    .link {
+        margin-bottom: 0;
+        font-size: 8px;
+    }
+
+    .send-message textarea {
+        line-height: 30px;
+    }
+
+    .footer-bottom {
+        display: none;
+    }
+
+
+    .send-message button {
+        width: 150px;
+        height: 53px;
+        border-radius: 15px;
+        background: #ffffff;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s;
+        color: #172554;
+        transition: background-color 0.3s, color 0.3s;
+        margin-top: 30px;
+
+
+    }
+
+    .send-message button:hover {
+        color: #ffffff;
+        background-color: #172554;
+        border: 1px solid #fff;
+    }
+
+}
