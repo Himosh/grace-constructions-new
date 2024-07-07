@@ -1,61 +1,70 @@
-import React from 'react';
-import './Footer.css';
+import React from 'react'
+import './Footer.css'
+import { Link } from 'react-router-dom'
 
-const Footer = () => {
-    const onSubmit = async (event) => {
-        event.preventDefault();
-        const formData = new FormData(event.target);
-
-        formData.append("access_key", "9c6fd212-b674-46c9-8856-f4eb775c2ba2");
-
-        const object = Object.fromEntries(formData);
-        const json = JSON.stringify(object);
-
-        const res = await fetch("https://api.web3forms.com/submit", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                Accept: "application/json"
-            },
-            body: json
-        }).then((res) => res.json());
-
-        if (res.success) {
-            console.log("Success", res);
-        }
-    };
+export const NewFooter = () => {
     return (
-        <footer className="footer">
-            <div className="send-message">
-                <h2>Send Message</h2>
-                <form onSubmit={onSubmit}>
-                    <input type="text" name="name" placeholder="Name" required />
-                    <input type="email" name="email" placeholder="Email Address" required />
-                    <input type="tel" name="phone" placeholder="Phone no" required />
-                    <textarea type="text" name="message" placeholder='Message'/>
-                    <button type="submit">Send</button>
-                </form>
-            </div>
-            <div className='footer-right'>
-                <div className="contact-us">
-                    <h2>Contact Us</h2>
-                    <p className='contact-content'>Need a quote or have questions? Contact Grace Building Construction today. We're here to help build your dreams.</p>
-                    <address className='contact-content-address'>
-                        No 03, 5th Lane<br />
-                        Manayaweli, Trincomalee,<br />
-                        Sri Lanka.<br />
-                    </address>
-                    <div className='contact-content-link'>
-                        Email: <a href="mailto:graceconst001@gmail.com">graceconst001@gmail.com</a><br />
-                        Phone: <a href="tel:+94762142332">+94 76 214 2332</a> / <a href="tel:+94761031242">+94 76 103 1242</a>
+        <div id="Footer">
+            <div id="FooterCon">
+                <div id="Logo">
+                    <img src="/assets/footerLogo.png" alt="" />
+                </div>
+
+                <div id="FooterDetail">
+                    <div id="Location">
+                        <div id="LocationHead">
+                            Location
+
+                        </div>
+                        <div id="LocationCon">
+                            No. 156/43, Dockyard<br />
+                            Road, Trincomalee
+                        </div>
+
+                    </div>
+
+                    <div id="Link">
+                        <div id="LinkHead">
+                            Links
+                        </div>
+                        <div id="LinkCon">
+                            <Link to="/about">About us</Link> <br />
+                            <Link to="/contact">Contact us</Link> <br />
+                            <Link to="career">Career</Link> <br />
+                        </div>
+
+                    </div>
+
+                    <div id="Legal">
+                        <div id="LegalHead">
+                            Projects
+                        </div>
+                        <div id="LegalCon">
+                            <Link to="/ongoing-projects">Ongoing</Link> <br />
+                            <Link to="/completed-projects">Completed</Link>  <br />
+                        </div>
                     </div>
                 </div>
-                <div className="footer-bottom">
-                    <p>Copyright &copy; 2024 All Rights Reserved.</p>
+            </div>
+
+            <div id="FooterSocial">
+                <div id="Icon">
+
+                    <a href="https://www.facebook.com/share/vP5cfxesDuLUHC4r/?mibextid=LQQJ4d" target="_blank">
+                        <img src="/assets/fb.png" alt="" />
+                    </a>
+                    <a href="https://www.instagram.com/grac_econstruction?igsh=ZHNvYXlxbDZqYW9z" target="_blank">
+                        <img src="/assets/insta.png" alt="" />
+                    </a>
+                    <img src="/assets/twitter.png" alt="" />
+
+                </div>
+                <div id="Copyright">
+                    Copyright © 2024 All Rights Reserved.
                 </div>
             </div>
-        </footer>
-    );
+        </div>
+    )
 }
 
-export default Footer;
+export default NewFooter;
