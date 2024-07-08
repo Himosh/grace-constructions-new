@@ -1,70 +1,64 @@
-import React from 'react'
-import './Footer.css'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Footer.css';
+import FooterImg from '../../assets/images/FooterImg.svg';
 
-export const NewFooter = () => {
+const Footer = () => {
     return (
-        <div id="Footer">
-            <div id="FooterCon">
-                <div id="Logo">
-                    <img src="/assets/footerLogo.png" alt="" />
+        <div className="footer">
+            <div className="footer-container">
+                <div className="logo-container">
+                    <img src={FooterImg} alt="Footer Logo" />
+                    <h1>Grace Construction.</h1>
+                    <p>Building your dreams with care.</p>
                 </div>
 
-                <div id="FooterDetail">
-                    <div id="Location">
-                        <div id="LocationHead">
-                            Location
-
-                        </div>
-                        <div id="LocationCon">
-                            No. 156/43, Dockyard<br />
+                <div className="footer-detail">
+                    <div className="footer-section">
+                        <div className="footer-heading">Locate us</div>
+                        <div className="footer-content">
+                            No. 156/43, Dockyard
                             Road, Trincomalee
                         </div>
-
                     </div>
 
-                    <div id="Link">
-                        <div id="LinkHead">
-                            Links
-                        </div>
-                        <div id="LinkCon">
-                            <Link to="/about">About us</Link> <br />
-                            <Link to="/contact">Contact us</Link> <br />
-                            <Link to="career">Career</Link> <br />
+                    <div className="footer-section">
+                        <div className="footer-heading">Useful links</div>
+                        <div className="footer-content">
+                        <div className="footer-content">
+                            <Link className="footer-link" to="/about">About us</Link> 
+                            <Link className="footer-link" to="/contact">Contact us</Link> 
+                            <Link className="footer-link" to="/career">Career</Link> 
+                            <Link className="footer-link" to="/ongoing-projects">Ongoing</Link> 
+                            <Link className="footer-link" to="/completed-projects">Completed</Link> 
                         </div>
 
-                    </div>
-
-                    <div id="Legal">
-                        <div id="LegalHead">
-                            Projects
-                        </div>
-                        <div id="LegalCon">
-                            <Link to="/ongoing-projects">Ongoing</Link> <br />
-                            <Link to="/completed-projects">Completed</Link>  <br />
                         </div>
                     </div>
+                    <div className="footer-section">
+                        <div className="footer-heading">Follow us</div>
+                        <div className="icon-content">
+                            <a href="https://www.facebook.com/share/vP5cfxesDuLUHC4r/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">
+                                <img src="/assets/fb.png" alt="Facebook" />
+                            </a>
+                            <a href="https://www.instagram.com/grac_econstruction?igsh=ZHNvYXlxbDZqYW9z" target="_blank" rel="noopener noreferrer">
+                                <img src="/assets/insta.png" alt="Instagram" />
+                            </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <img src="/assets/twitter.png" alt="Twitter" />
+                            </a>
+                        </div>
+                        </div>
                 </div>
             </div>
 
-            <div id="FooterSocial">
-                <div id="Icon">
-
-                    <a href="https://www.facebook.com/share/vP5cfxesDuLUHC4r/?mibextid=LQQJ4d" target="_blank">
-                        <img src="/assets/fb.png" alt="" />
-                    </a>
-                    <a href="https://www.instagram.com/grac_econstruction?igsh=ZHNvYXlxbDZqYW9z" target="_blank">
-                        <img src="/assets/insta.png" alt="" />
-                    </a>
-                    <img src="/assets/twitter.png" alt="" />
-
-                </div>
-                <div id="Copyright">
-                    Copyright © 2024 All Rights Reserved.
+            <div className="footer-social">
+                <div className="copyright">
+                    Made with ❤️ from grace constructions.
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default NewFooter;
+export default Footer;
