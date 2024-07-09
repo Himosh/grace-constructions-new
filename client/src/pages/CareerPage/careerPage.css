@@ -2,8 +2,9 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    /* margin: auto; */
     padding: 8%;
+    margin: 50px 50px;
 }
 
 .contact h2 {
@@ -24,9 +25,9 @@
     line-height: normal;
 }
 
-.contact .contact-container {
+.contact-container {
     padding-top: 111px;
-    margin: auto;
+    margin: 0px 50px;
     max-width: 612px;
     text-align: left;
     color: #172554;
@@ -137,20 +138,14 @@
 
 @media (max-width: 450px) {
     .contact {
-        text-align: center !important;
-        justify-content: center !important;
-        align-items: center !important;
-        margin: 0 !important;
-        padding: 5% !important;
+        /* padding: 8%; */
+        /* margin: 50px 50px; */
+        margin-left: 300px;
+
     }
 
     .contact h2 {
-        color: #172554 !important;
-        text-align: center !important;
-        font-size: 20px !important;
-        font-style: normal !important;
-        font-weight: 700 !important;
-        line-height: normal !important;
+ 
     }
 
     .contact p {
@@ -163,19 +158,10 @@
     }
 
     .contact .contact-container {
-        padding-top: 50px !important;
-        margin: auto !important;
-        width: 100% !important;
-        text-align: left !important;
-        color: #172554 !important;
-        font-size: 12px !important;
-        font-style: normal !important;
-        font-weight: 500 !important;
-        line-height: normal !important;
-        padding-bottom: 40px !important;
+
     }
 
-    .contact .contact-container input,
+    /* .contact .contact-container input,
     .contact .contact-container textarea {
         font-size: 12px !important;
         padding: 12px 0 !important;
@@ -241,5 +227,5 @@
     transition: background-color 0.3s, color 0.3s;
 }
 
-
+ */
 }

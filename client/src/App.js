@@ -9,12 +9,22 @@ import CompletedProjects from './pages/CompletedProjectPage/completedProjectPage
 import OngoingProjects from './pages/OngoingProjectPage/ongoingProjectPage'
 import AboutPage from './pages/AboutPage/About'
 import Footer from './components/Footer/Footer';
+import { Helmet } from 'react-helmet';
 
 
 
 function App() {
     return (
         <Router>
+            <Helmet>
+      <title>Grace construction</title>
+      <meta name="description" content="Building Dreams,Creating Realities" />
+      <meta property="og:title" content="Default Title" />
+      <meta property="og:description" content="Building Dreams,Creating Realities" />
+      <meta property="og:image" content="https://www.graceconstruction.lk/" />
+      <meta property="og:url" content="https://www.graceconstruction.lk/" />
+    </Helmet>
+
             <div>
                 
             <NavBar />

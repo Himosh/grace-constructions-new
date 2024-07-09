@@ -20,7 +20,7 @@ function About() {
                 {/*First-Image*/}
                 <div className='about-firstImage'>
                     <div className='image-container'>
-                        <img src={Image1} alt="about-firstImg" width="1240px" height="auto" />
+                        <img src={Image1} alt="about-firstImg"  />
                         <img src={Logo} alt="logo-1" className='logo-overlay' />
                         <div className='hover-overlay'>
                             <div className='hover-overlay-text'>

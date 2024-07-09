@@ -4,6 +4,19 @@ import './Footer.css';
 import FooterImg from '../../assets/images/FooterImg.svg';
 
 const Footer = () => {
+
+    const scrollToTop = () => {
+        window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+        });
+    };
+
+    const handleClick = () => {
+        scrollToTop();
+    }
+
+
     return (
         <div className="footer">
             <div className="footer-container">
@@ -17,24 +30,24 @@ const Footer = () => {
                     <div className="footer-section">
                         <div className="footer-heading">Locate us</div>
                         <div className="footer-content">
-                            No. 156/43, Dockyard
-                            Road, Trincomalee
+                            <a href="https://maps.app.goo.gl/7r3qxqea2JVCJBeL8?g_st=iw 
+                            " target="_blank" rel="noopener noreferrer">
+                                No. 156/43, Dockyard Road, <br/> Trincomalee
+                            </a>
                         </div>
                     </div>
 
                     <div className="footer-section">
                         <div className="footer-heading">Useful links</div>
                         <div className="footer-content">
-                        <div className="footer-content">
-                            <Link className="footer-link" to="/about">About us</Link> 
-                            <Link className="footer-link" to="/contact">Contact us</Link> 
-                            <Link className="footer-link" to="/career">Career</Link> 
-                            <Link className="footer-link" to="/ongoing-projects">Ongoing</Link> 
-                            <Link className="footer-link" to="/completed-projects">Completed</Link> 
-                        </div>
-
+                            <Link className="footer-link" to="/about" onClick={handleClick}>About us</Link>
+                            <Link className="footer-link" to="/contact" onClick={handleClick}>Contact us</Link>
+                            <Link className="footer-link" to="/career" onClick={handleClick}>Career</Link>
+                            <Link className="footer-link" to="/ongoing-projects" onClick={handleClick}>Ongoing projects</Link>
+                            <Link className="footer-link" to="/completed-projects" onClick={handleClick}>Completed projects</Link>
                         </div>
                     </div>
+
                     <div className="footer-section">
                         <div className="footer-heading">Follow us</div>
                         <div className="icon-content">
@@ -48,14 +61,12 @@ const Footer = () => {
                                 <img src="/assets/twitter.png" alt="Twitter" />
                             </a>
                         </div>
-                        </div>
+                    </div>
                 </div>
             </div>
 
             <div className="footer-social">
-                <div className="copyright">
-                    Made with ❤️ from grace constructions.
-                </div>
+                Made with ❤️ from Grace Construction.
             </div>
         </div>
     );

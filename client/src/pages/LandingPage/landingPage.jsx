@@ -60,10 +60,10 @@ const LandingPage = () => {
             <div className="hero-section">
                 <div className="hero-section-left">
                     <div className="hero-section-head">
-                        Building Dreams,<br /> Creating Realities
+                        Building Dreams,<br /> Creating Realities!
                     </div>
                     <div className="hero-section-para">
-                        At Grace Building Construction, we turn your dreams into reality with precision,<br /> integrity, and excellence. Our dedicated team ensures every project is crafted to <br />perfection, one brick at a time.
+                        At Grace Building Construction, we turn your dreams into reality with precision, integrity, and excellence. Our dedicated team ensures every project is crafted to perfection, one brick at a time.
                     </div>
                     <div className="hero-section-para-mobile">
                         At Grace Building Construction, we turn your dreams into reality with precision, integrity, and excellence, crafting every project to perfection.

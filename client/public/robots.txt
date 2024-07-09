@@ -1,3 +1,4 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /private-page
+Allow: /
+Sitemap: https://www.graceconstruction.lk/sitemap.xml

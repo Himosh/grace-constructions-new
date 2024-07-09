@@ -104,7 +104,7 @@ const CareerPage = () => {
                             name="position"
                             value={formData.position}
                             onChange={handleChange}
-                            placeholder='Architects/Draftsmen/Accountants/Supervisors/Trainees...etc'
+                            placeholder='Architects/Draftsmen/Accountants/...etc'
                         />
                     </div>
                     <div className="resumeField">
