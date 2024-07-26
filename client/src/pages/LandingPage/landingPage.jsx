@@ -235,7 +235,7 @@ const LandingPage = () => {
                                 </div>
                             </div>
                         </div>
-                        <Link to="#" className='link'>
+                        <Link to="/staff" className='link'>
                             <button className="explore-button">
                                 View Openings
                             </button>

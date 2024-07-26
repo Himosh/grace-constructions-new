@@ -1,0 +1,111 @@
+.first-employee-card {  
+    background-color: #F1F2F1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    padding: 30px 20px 30px 20px;
+    width: 290px;
+    height: auto;
+    /* border: 1px solid #172554; */
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0px;
+    /* margin-right: 30px; */
+    color: #172554;
+    
+}
+
+.first-employee-image {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+    border: 20px solid #F1F2F1;
+    box-shadow: 0 0 0 3px #172554;
+
+}
+
+.first-employee-info {
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+    /* width: max-content; */
+}
+
+.first-employee-info h3 {
+    /* background-color: aqua; */
+    height: 50px;
+    margin: 8px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.first-employee-info .first-role {
+    margin: 8px 0;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.first-employee-info .first-degree {
+    margin-top: 20px;
+    font-size: 11px;
+}
+
+/* Media query for screens with a max-width of 400px */
+@media (max-width: 450px) {
+
+    .first-employee-card {
+    
+        background-color: #F1F2F1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+        padding: 30px 20px 30px 20px;
+        width: 260px;
+        height: auto;
+        /* border: 1px solid #172554; */
+        /* border-radius: 20px; */
+        overflow: hidden;
+        margin: 0px;
+        /* margin-right: 30px; */
+        color: #172554;
+        
+    }
+    
+    .first-employee-image {
+        object-fit: cover;
+        border-radius: 50%;
+        height: 160px;
+        width: 160px;
+        border: 20px solid #F1F2F1;
+        box-shadow: 0 0 0 3px #172554;
+    
+    }
+    
+    .first-employee-info {
+        margin-top: 14px;
+        width: 100%;
+        text-align: center;
+        /* width: max-content; */
+    }
+    
+    .first-employee-info h3 {
+        /* background-color: aqua; */
+        height: 50px;
+        margin: 8px 0;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    
+    .first-employee-info .first-role {
+        margin: 8px 0;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    
+    .first-employee-info .first-degree {
+        margin-top: 20px;
+        font-size: 10px;
+    }
+    
+}

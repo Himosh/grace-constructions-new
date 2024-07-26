@@ -10,6 +10,7 @@ import OngoingProjects from './pages/OngoingProjectPage/ongoingProjectPage'
 import AboutPage from './pages/AboutPage/About'
 import Footer from './components/Footer/Footer';
 import { Helmet } from 'react-helmet';
+import StaffPage from './pages/StaffPage/staffPage';
 
 
 
@@ -60,6 +61,10 @@ function App() {
                         element={<OngoingProjects />}
                     />
 
+                    <Route
+                        path='/staff'
+                        element={<StaffPage/>}
+                    />
 
                 </Routes>
                 <Footer />

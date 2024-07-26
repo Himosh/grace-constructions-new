@@ -1,0 +1,159 @@
+.employee-card {
+    background-color: #F1F2F1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    padding: 30px 20px 30px 20px;
+    width: 290px;
+    height: 390px;
+    overflow: hidden;
+    margin: 0px;
+    border-radius: 20px;
+    color: #172554;
+}
+
+.employee-image {
+
+    object-fit: cover;
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+    border: 20px solid #F1F2F1;
+    box-shadow: 0 0 0 3px #172554;
+
+}
+
+.employee-info {
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+    height: 140px;
+    padding: 0 5px;
+}
+
+.employee-card .employee-info h3 {
+    margin: 8px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.employee-info .role {
+    margin: 8px 0;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.employee-info .degree {
+    margin-top: 20px;
+    font-size: 11px;
+}
+
+@media (max-width: 1110px) {
+    .employee-card {
+        width: 260px;
+    }
+}
+
+
+/* Media query for screens with a max-width of 400px */
+@media (max-width: 450px) {
+    .employee-card {
+        background-color: #F1F2F1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+        padding: 20px 10px 20px 10px;
+        width: 170px;
+        height: 255px;
+        overflow: hidden;
+        margin: 0px;
+        /* margin-right: 30px; */
+        color: #172554;
+
+    }
+
+    .employee-image {
+
+        height: 110px;
+        width: 110px;
+        border: 10px solid #F1F2F1;
+        box-shadow: 0 0 0 2px #172554;
+        /* Adds space between the image and the text */
+    }
+
+    .employee-info {
+        text-align: center;
+        width: 100%;
+    }
+
+    .employee-card .employee-info h3 {
+        margin: 6px 0;
+        overflow: inherit;
+        font-size: 11px;
+        font-weight: 600;
+        width: 100%;
+
+    }
+
+    .employee-info .role {
+        margin: 4px 0;
+        font-weight: 500px;
+        font-size: 8px;
+    }
+
+    .employee-info .degree {
+        margin-top: 10px;
+        font-size: 6px;
+        font-weight: 400;
+    }
+
+
+}
+
+@media (max-width: 380px) {
+    .employee-card {
+        width: 160px;
+    }
+}
+
+@media (max-width: 325px) {
+    .employee-card {
+        width: 130px;
+        height: 230px;
+    }
+
+    .employee-image {
+
+        height: 90px;
+        width: 90px;
+        border: 10px solid #F1F2F1;
+        box-shadow: 0 0 0 2px #172554;
+
+    }
+
+    .employee-info {
+        text-align: center;
+        width: 100%;
+    }
+
+    .employee-card .employee-info h3 {
+        margin: 6px 0;
+        overflow: inherit;
+        font-size: 10px;
+        font-weight: 600;
+        width: 100%;
+
+    }
+
+    .employee-info .role {
+        margin: 4px 0;
+        font-weight: 500px;
+        font-size: 8px;
+    }
+
+    .employee-info .degree {
+        margin-top: 10px;
+        font-size: 6px;
+        font-weight: 400;
+    }
+}
