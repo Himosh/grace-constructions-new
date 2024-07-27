@@ -61,7 +61,7 @@ const StaffPage = () => {
             </div>
             <hr/>
             <div className="employee-container">
-                {Architects.map(employee => (
+                {EngineeringTrainees.map(employee => (
                     <EmployeeCard
                         image={employee.image}
                         key={employee.name}
@@ -74,7 +74,7 @@ const StaffPage = () => {
             </div>
             <hr/>
             <div className="employee-container">
-                {EngineeringTrainees.map(employee => (
+                {Architects.map(employee => (
                     <EmployeeCard
                         image={employee.image}
                         key={employee.name}

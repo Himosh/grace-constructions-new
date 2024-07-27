@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './landingPage.css';
 import { Link } from 'react-router-dom';
 
+
 const LandingPage = () => {
     const images = [
         '/assets/showcase-buildingg1.jpg',
@@ -54,6 +55,17 @@ const LandingPage = () => {
 
         return () => clearInterval(intervalId); // Clear interval on component unmount
     }, [imagesPerSlide, images.length]);
+
+    const scrollToTop = () => {
+        window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+        });
+    };
+
+    const handleClick = () => {
+        scrollToTop();
+    }
 
     return (
         <div className='landing-page'>
@@ -194,7 +206,7 @@ const LandingPage = () => {
                             </div>
                         </div>
                         <Link to="ongoing-projects" className='link'>
-                            <button className="explore-button">
+                            <button className="explore-button" onClick={handleClick}>
                                 View Openings
                             </button>
                         </Link>
@@ -215,7 +227,7 @@ const LandingPage = () => {
                             </div>
                         </div>
                         <Link to="completed-projects" className='link'>
-                            <button className="explore-button">
+                            <button className="explore-button" onClick={handleClick}>
                                 View Openings
                             </button>
                         </Link>
@@ -236,7 +248,7 @@ const LandingPage = () => {
                             </div>
                         </div>
                         <Link to="/staff" className='link'>
-                            <button className="explore-button">
+                            <button className="explore-button" onClick={handleClick}>
                                 View Openings
                             </button>
                         </Link>

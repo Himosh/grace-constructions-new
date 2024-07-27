@@ -12,7 +12,7 @@
   
   .top h3 {
     margin-bottom: 30px;
-    font-size: 45px;
+    font-size: 52px;
     font-weight: 700;
   
   }
@@ -87,6 +87,7 @@
     hr {
         margin-top: 50px;
         margin-left: 20px;
+        border: 0.5px solid gainsboro;
     }
     .staff-page {
       width: 100%;
@@ -99,8 +100,8 @@
     
     .top h3 {
       margin-bottom: 30px;
-      font-size: 20px;
-      font-weight: 700;
+      font-size: 28px;
+      font-weight: 600;
     
     }
     .employee-container {

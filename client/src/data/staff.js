@@ -24,6 +24,7 @@ import Template from "./../assets/Staffs/Template.png";
 import Vasanthan from "./../assets/Staffs/Vasanthan.jpg";
 import Vijayathasan from "./../assets/Staffs/Vijayathasan.jpg";
 import Vinojan from "./../assets/Staffs/Vinojan.jpg";
+import John from "./../assets/Staffs/John.jpg";
 
 const Directors = [
     {
@@ -121,7 +122,7 @@ const EngineeringTrainees = [
         "name": "Jeyakumar John Kesanth",
         "role": "Engineering Trainee",
         "degree": "BSc (Hons) in Engineering (Civil Engineering)",
-        "image": Keshanth
+        "image": John
     },
     {
         "id": 2,
@@ -262,7 +263,7 @@ const Supervisors = [
 const Accountant = [
     {
         "id": 1,
-        "name": "Pathmarajah",
+        "name": "Mr.Pathmarajah",
         "role": "Accountant",
         "degree": "BSc Hons Civil Engineering, University of Jaffna",
         "image": Template
